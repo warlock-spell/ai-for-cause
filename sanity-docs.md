@@ -53,3 +53,5 @@ Install next sanity -> `npm i next-sanity` (install it in root directory of next
 copy data from file sanityaiforcause/sanity.json and set it to your env variables
 create .env.local inside your nextjs root directory
 ```
+
+In post.js, add a new field -> description
