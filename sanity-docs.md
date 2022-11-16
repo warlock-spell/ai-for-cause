@@ -55,3 +55,19 @@ create .env.local inside your nextjs root directory
 ```
 
 In post.js, add a new field -> description
+
+Query that we will use:
+
+```
+*[_type == "post"]{
+    _id,
+    title,
+    author -> {
+        name,
+        image
+    },
+    description,
+    mainImage,
+    slug,
+}
+```
