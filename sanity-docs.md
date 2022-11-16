@@ -1,4 +1,4 @@
-To run a unsigned file use: \
+To run a unsigned file use:
 
 ```
 Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
