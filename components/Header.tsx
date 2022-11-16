@@ -25,9 +25,9 @@ function Header() {
               GitHub
             </Link>
         </h3>
-        <h3 className="text-green-600 px-4 py-1 rounded-full border-green-600">
+        <h3 className="text-white bg-green-600 px-4 py-1 rounded-full">
             <Link href="https://daksh.wiki/">
-              Other Links
+              Wiki
             </Link>
         </h3>
 
