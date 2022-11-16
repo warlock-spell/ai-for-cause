@@ -19,3 +19,13 @@ export const config = {
 
 // in .env file # Next_public allows information to be retrived both on client and api side
 // restart your server if you modify .env file
+
+// set up the client for fetching data in the getProps page functions
+export const sanityClient = createClient(config)
+
+// set up helper function for generating Image URLs with only the asset reference data in your documents
+// read more: https://www.sanity.io/docs/image-url
+export const urlFor = (source) => createImageUrlBuilder(config).image(source)
+
+// helper function for using the current logged in user account
+export const useCurrentUser = createCurrentUserHook(config)
