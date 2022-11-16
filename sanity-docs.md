@@ -71,3 +71,9 @@ Query that we will use:
     slug,
 }
 ```
+
+_createImageUrlBuilder_ is no longer wrapped by next-sanity and you'll need to install the dependency yourself
+
+```
+npm install @sanity/image-url
+```
