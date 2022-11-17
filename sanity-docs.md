@@ -77,3 +77,25 @@ _createImageUrlBuilder_ is no longer wrapped by next-sanity and you'll need to i
 ```
 npm install @sanity/image-url
 ```
+
+Another query:
+
+```
+*[_type == "post" && slug.current == $slug][0]{
+    _id,
+    _createdAt,
+  title,
+  author -> {
+  name,
+  image,
+  },
+  'comments': *[
+    _type == "comment" &&
+    post, ref == ^._id &&
+    approved == true],
+   description,
+   mainImage,
+   slug,
+   body,
+}
+```
