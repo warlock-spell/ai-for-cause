@@ -61,6 +61,7 @@ function Post({ post }: Props) {
                 />
             </div>
         </article>
+        <hr className="max-w-lg my-5 mx-auto border-ai-logo-black"/>
     </main>
   )
 }
