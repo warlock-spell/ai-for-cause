@@ -99,3 +99,5 @@ Another query:
    body,
 }
 ```
+
+For creating tokens, go to sanity.io -> select project -> api tab -> scroll down to token section -> add api token -> editor token -> click save and copy the token \

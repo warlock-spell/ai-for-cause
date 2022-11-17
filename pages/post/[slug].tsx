@@ -25,6 +25,19 @@ function Post({ post }: Props) {
     formState: { errors },
   } = useForm<IFormInput>()
 
+  const onSubmit: SubmitHandler<IFormInput> = (data) => {
+    fetch("/api/createComment", {
+      method: "POST",
+      body: JSON.stringify(data),
+    })
+      .then(() => {
+        console.log(data)
+      })
+      .catch((err) => {
+        console.log(err)
+      })
+  }
+
   return (
     <main>
       <Header />
@@ -80,7 +93,10 @@ function Post({ post }: Props) {
       </article>
       <hr className="max-w-lg my-5 mx-auto border-yellow-500" />
 
-      <form className="flex flex-col p-5 max-w-2xl mx-auto mb-10">
+      <form
+        onSubmit={handleSubmit(onSubmit)}
+        className="flex flex-col p-5 max-w-2xl mx-auto mb-10"
+      >
         <h3 className="text-sm text-ai-logo-black">Enjoy this article?</h3>
         <h4 className="text-3xl font-bold">Leave a comment below!</h4>
         <hr className="py-3 mt-2" />
