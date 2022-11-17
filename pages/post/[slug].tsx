@@ -61,7 +61,26 @@ function Post({ post }: Props) {
                 />
             </div>
         </article>
-        <hr className="max-w-lg my-5 mx-auto border-ai-logo-black"/>
+        <hr className="max-w-lg my-5 mx-auto border-yellow-500"/>
+
+        <form className="flex flex-col p-5 max-w-2xl mx-auto mb-10">
+            <h3 className="text-sm text-ai-logo-black">Enjoy this article?</h3>
+            <h4 className="text-3xl font-bold">Leave a comment below!</h4>
+            <hr className="py-3 mt-2" />
+
+            <label className="block mb-5">
+                <span className="text-gray-700">Name</span>
+                <input className="shadow border rounded py-2 px-3 form-input mt-1 block w-full ring-yellow-500 outline-none focus:ring" placeholder="Your Name" type="text" />
+            </label>
+            <label className="block mb-5">
+                <span className="text-gray-700">Email</span>
+                <input className="shadow border rounded py-2 px-3 form-input mt-1 block w-full ring-yellow-500 outline-none focus:ring" placeholder="your@email.com" type="text" />
+            </label>
+            <label className="block mb-5">
+                <span className="text-gray-700">Comment</span>
+                <textarea className="shadow border rounded py-2 px-3 form-textarea mt-1 block w-full ring-yellow-500 outline-none focus:ring" placeholder="Enter your comment here." rows={8} />
+            </label>
+        </form>
     </main>
   )
 }
@@ -99,6 +118,10 @@ export const getStaticProps: GetStaticProps = async({params}) => {
         name,
         image,
         },
+        'comments': *[
+            _type == "comment" &&
+            post, ref == ^._id &&
+            approved == true],
         description,
         mainImage,
         slug,
