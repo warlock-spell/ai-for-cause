@@ -30,7 +30,7 @@ export default function Home({ posts }: Props) {
             Making a difference with Artificial Intelligence.
           </h2>
         </div>
-
+        {/* img should be less than 10kb */}
         <img
           className="hidden md:inline-flex h-32 lg:h-full"
           src="/Ai-min.png"
