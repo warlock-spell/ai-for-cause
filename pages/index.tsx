@@ -33,7 +33,7 @@ export default function Home({ posts }: Props) {
 
         <img
           className="hidden md:inline-flex h-32 lg:h-full"
-          src="/AI.png"
+          src="/Ai.png"
           alt="logo img"
         />
       </div>
