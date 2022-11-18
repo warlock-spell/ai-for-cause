@@ -16,8 +16,12 @@ function Header() {
           className="hidden md:inline-flex
         items-center space-x-10"
         >
-          <h3>About</h3>
-          <h3>Contact</h3>
+          <Link href="/about">
+            <h3>About</h3>
+          </Link>
+          <Link href="/contact">
+            <h3>Contact</h3>
+          </Link>
         </div>
       </div>
 
