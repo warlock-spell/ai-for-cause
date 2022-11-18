@@ -4,7 +4,7 @@ import Link from "next/link"
 
 const contact = () => {
   return (
-    <div className="max-w-7xl">
+    <div className="max-w-7xl mx-auto">
       <Head>
         <title>Contact - AI For Cause</title>
         <link rel="icon" href="/favicon.ico" />
@@ -12,7 +12,7 @@ const contact = () => {
 
       <Header />
 
-      <div className="flex justify-between items-center bg-ai-logo-black border-y border-black py-10 lg:py-0 h-screen xl:w-fit">
+      <div className="flex justify-between items-center bg-ai-logo-black border-y border-black py-10 lg:py-0 h-screen mx-auto">
         <div className="px-10 space-y-5">
           <h1 className="text-6xl text-ai-logo-text max-w-xl font-mono">
             How can I help?
