@@ -5,7 +5,7 @@ const contact = () => {
   return (
     <div className="max-w-7xl mx-auto">
       <Head>
-        <title>About - AI For Cause</title>
+        <title>Contact - AI For Cause</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
