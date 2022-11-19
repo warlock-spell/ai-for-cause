@@ -18,11 +18,12 @@ export default function Home({ posts }: Props) {
         <title>AI For Cause</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      {/* <meta name="viewport" content="width=device-width, initial-scale=1.0" /> */}
 
       <Header />
       <div className="flex justify-between items-center bg-ai-logo-black border-y border-black py-10 lg:py-0">
         <div className="px-10 space-y-5">
-          <h1 className="text-6xl text-ai-logo-text max-w-xl font-mono">
+          <h1 className="lg:text-6xl xl:text-6xl sm:text-2xl text-ai-logo-text max-w-xl font-mono">
             AI for <span className="text-ai-logo-header-yellow">cause</span> -
             Exploring Endless Possibilities With AI.
           </h1>
