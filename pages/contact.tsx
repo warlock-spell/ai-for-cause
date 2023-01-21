@@ -14,18 +14,25 @@ const contact = () => {
         <div className="px-10 space-y-5 text-center">
           <h1 className="sm:text-2xl text-4xl font-medium">How can I help?</h1>
           <p className="text-lg leading-relaxed">
-            AI for cause is an initiative to explore the endless possibilities
-            with the help of AI.
+            AI for <span className="text-ai-logo-header-yellow">cause </span> is
+            a forward-thinking initiative that aims to harness the power of
+            Artificial Intelligence to bring about positive change in various
+            causes and case studies. If you are passionate about making a
+            difference and wish to contribute in any way, be it by featuring a
+            cause or case-study, providing feedback, or simply having a
+            conversation, please do not hesitate to reach out.
           </p>
           <p className="text-lg leading-relaxed">
-            Whether you’re interested in featuring any cause/case-study, you
-            want to give any feedback, or you just want to chat, send me a
-            message. I’d love to connect!
+            I am always eager to connect and collaborate with like-minded
+            individuals. With the help of AI, the possibilities are endless, and
+            together we can make a meaningful impact.
           </p>
           <p className="text-lg leading-relaxed">
             Feel free to drop me an email at{" "}
             <Link href="mailto: aiforcause@gmail.com">
-              <span className="text-primary">aiforcause@gmail.com</span>
+              <span className="text-ai-logo-header-yellow">
+                aiforcause@gmail.com
+              </span>
             </Link>
           </p>
           <a
