@@ -10,13 +10,12 @@ const contact = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <div className="flex justify-center items-center py-10 h-screen">
+      <div className="flex flex-col md:flex-row justify-between items-center py-10 h-screen mx-auto">
         <div className="px-10 space-y-5 text-center">
-          <h1 className="text-4xl font-medium">How can I help?</h1>
+          <h1 className="sm:text-2xl text-4xl font-medium">How can I help?</h1>
           <p className="text-lg leading-relaxed">
-            AI for <span className="text-ai-logo-header-yellow">cause </span> is
-            an initiative to explore the endless possibilities with the help of
-            AI.
+            AI for cause is an initiative to explore the endless possibilities
+            with the help of AI.
           </p>
           <p className="text-lg leading-relaxed">
             Whether you’re interested in featuring any cause/case-study, you
@@ -26,9 +25,7 @@ const contact = () => {
           <p className="text-lg leading-relaxed">
             Feel free to drop me an email at{" "}
             <Link href="mailto: aiforcause@gmail.com">
-              <span className="text-ai-logo-header-yellow">
-                aiforcause@gmail.com
-              </span>
+              <span className="text-primary">aiforcause@gmail.com</span>
             </Link>
           </p>
           <a
@@ -38,7 +35,7 @@ const contact = () => {
             Contact Us
           </a>
         </div>
-        <img className="ml-5" src="/Ai-min.png" alt="logo img" />
+        <img className="lg:ml-5 md:ml-0" src="/Ai-min.png" alt="logo img" />
       </div>
     </div>
   )
