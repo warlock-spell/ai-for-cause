@@ -16,7 +16,7 @@ function Header() {
           className="hidden md:inline-flex
         items-center space-x-10"
         >
-          <Link href="daksh.fyi">
+          <Link href="https://dakshgaur.com/">
             <h3>About Me</h3>
           </Link>
           <Link href="/contact">
