@@ -16,7 +16,7 @@ function Header() {
           className="hidden md:inline-flex
         items-center space-x-10"
         >
-          <Link href="https://blog.dakshgaur.com/">
+          <Link href="www.daksh.fyi">
             <h3>About Me</h3>
           </Link>
           <Link href="/contact">
@@ -30,7 +30,7 @@ function Header() {
           <Link href="https://github.com/warlock-spell">GitHub</Link>
         </h3>
         <h3 className="text-white bg-green-600 px-4 py-1 rounded-full">
-          <Link href="https://wiki.dakshgaur.com/">Wiki</Link>
+          <Link href="https://projects.dakshgaur.com/">Projects</Link>
         </h3>
       </div>
     </header>
